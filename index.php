@@ -1,3 +1,6 @@
+<?php
+include_once "config.php";
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -15,6 +18,10 @@
             <li><a href="index.php">Главная</a></li>
             <li><a href="index.php?p=fundamentals_syntax">Основы синтаксиса</a></li>
             <li><a href="index.php?p=independent_work">Самостоятельная работа</a></li>
+            <li><a href="index.php?p=form_processing">Отправка данных на сервер</a></li>
+            <li><a href="index.php?p=form">Форма</a></li>
+            <li><a href="index.php?p=roles">Роли</a></li>
+            <li><a href="index.php?p=users">Пользователи</a></li>
         </ul>
     </nav>
 </header>
