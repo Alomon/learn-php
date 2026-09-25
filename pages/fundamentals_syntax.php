@@ -358,6 +358,78 @@ if ($a === 10) {
     echo "Истинно!";
 }
 
+echo "<h2>Операции с массивами</h2>";
+
+$users = ["Иван", "Кирилл", "Станислав", "Максим", "Сергей", "Егор","Диниил", "Данил", "Никита"];
+print_r($users);
+
+// Проверка переменной, что она массив
+echo (is_array($users)) ? "<p>Да, это массив</p>" : "<p>Нет, это не массив</p>";
+
+// Размер массива
+echo "<p>В массиве USERS " . count($users) . " элемнтов</p>";
+echo "<p>В массиве USERS " . sizeof($users) . " элемнтов</p>";
+
+// Перемешивание элементов массива
+shuffle($users);
+echo "<br>"; print_r($users);
+
+// Сбор набора переменных в ассоциативный массив, где ключами будут имена переменных
+$color = "black";
+$year = 2026;
+$game = "MineCraft";
+$data = compact('color', 'year', 'game');
+echo "<br><br>"; print_r($data);
+
+//Сортировка массива по возрастанию
+asort($users);
+echo "<br><br>"; print_r($users);
+
+// Сортировка массива по убыванию
+arsort($users);
+echo "<br><br>"; print_r($users);
+
+// Сортировка массива по ключам (по возрастанию)
+ksort($data);
+echo "<br><br>"; print_r($data);
+
+// Сортировка массива по ключам (по убыванию)
+krsort($data);
+echo "<br><br>"; print_r($data);
+
+// Естественная сортировка (с учетом регистра)
+$os = ["Windows 7", "Windows 8", "Windows 11", "Windows 8.1", "Windows 10"];
+echo "<br><br>"; print_r($os);
+natsort($os);
+echo "<br><br>"; print_r($os);
+
+// Естественная сортировка (без учета регистра)
+natcasesort($os);
+echo "<br><br>"; print_r($os);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
